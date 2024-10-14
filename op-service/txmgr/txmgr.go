@@ -29,13 +29,13 @@ import (
 
 const (
 	// geth requires a minimum fee bump of 10% for regular tx resubmission
-	priceBump int64 = 10
+	priceBump int64 = 12
 	// geth requires a minimum fee bump of 100% for blob tx resubmission
 	blobPriceBump int64 = 100
 )
 
 var (
-	priceBumpPercent     = big.NewInt(100 + priceBump)
+	priceBumpPercent     = big.NewInt(23 + priceBump)
 	blobPriceBumpPercent = big.NewInt(100 + blobPriceBump)
 
 	oneHundred = big.NewInt(100)
